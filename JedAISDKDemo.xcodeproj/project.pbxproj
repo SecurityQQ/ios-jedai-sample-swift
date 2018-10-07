@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6544EAAB2169F124000D2041 /* JedAIDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAAA2169F124000D2041 /* JedAIDatabase.swift */; };
+		6544EAAF2169F47E000D2041 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAAE2169F47E000D2041 /* Logger.swift */; };
+		6544EAB12169F510000D2041 /* JedAIDecodables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAB02169F510000D2041 /* JedAIDecodables.swift */; };
+		6544EAB32169F56A000D2041 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAB22169F56A000D2041 /* Date.swift */; };
+		6544EAB52169F5E9000D2041 /* DiscoverEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAB42169F5E9000D2041 /* DiscoverEvent.swift */; };
+		6544EAB82169F6A4000D2041 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAB72169F6A4000D2041 /* Location.swift */; };
+		6544EABD2169F8D8000D2041 /* JedAIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EABC2169F8D8000D2041 /* JedAIModel.swift */; };
+		6544EAC02169FBE4000D2041 /* NotificationPopables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EABF2169FBE4000D2041 /* NotificationPopables.swift */; };
+		6544EAC22169FC7B000D2041 /* UserNotificationListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAC12169FC7B000D2041 /* UserNotificationListener.swift */; };
+		6544EAC42169FE62000D2041 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAC32169FE62000D2041 /* EventType.swift */; };
+		8B2C419521674456001358A8 /* CustomEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C419421674456001358A8 /* CustomEventListener.swift */; };
+		8B2C419721674CEA001358A8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C419621674CEA001358A8 /* TabBarViewController.swift */; };
+		8B2C419921676A67001358A8 /* Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2C419821676A67001358A8 /* Queries.swift */; };
+		8B81EFA92166390F0018598E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81EFA82166390F0018598E /* AppDelegate.swift */; };
+		8B81EFAB2166390F0018598E /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81EFAA2166390F0018598E /* EventsViewController.swift */; };
+		8B81EFAE2166390F0018598E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B81EFAC2166390F0018598E /* Main.storyboard */; };
+		8B81EFB0216639120018598E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B81EFAF216639120018598E /* Assets.xcassets */; };
+		8B81EFB3216639120018598E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B81EFB1216639120018598E /* LaunchScreen.storyboard */; };
+		8B81EFBB21663BF00018598E /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81EFBA21663BF00018598E /* LocationsViewController.swift */; };
+		8B81EFBD21663C0F0018598E /* VisitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B81EFBC21663C0F0018598E /* VisitsViewController.swift */; };
+		C60239DD7C039E6B2DD908D3 /* Pods_JedAISDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE6BA8EB797BD20785A0D22 /* Pods_JedAISDKDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3080A3D2C7C5F4053D01D7CB /* Pods-JedAISDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JedAISDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JedAISDKDemo/Pods-JedAISDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6544EAAA2169F124000D2041 /* JedAIDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JedAIDatabase.swift; sourceTree = "<group>"; };
+		6544EAAE2169F47E000D2041 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		6544EAB02169F510000D2041 /* JedAIDecodables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JedAIDecodables.swift; sourceTree = "<group>"; };
+		6544EAB22169F56A000D2041 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		6544EAB42169F5E9000D2041 /* DiscoverEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverEvent.swift; sourceTree = "<group>"; };
+		6544EAB72169F6A4000D2041 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6544EABC2169F8D8000D2041 /* JedAIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JedAIModel.swift; sourceTree = "<group>"; };
+		6544EABF2169FBE4000D2041 /* NotificationPopables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPopables.swift; sourceTree = "<group>"; };
+		6544EAC12169FC7B000D2041 /* UserNotificationListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationListener.swift; sourceTree = "<group>"; };
+		6544EAC32169FE62000D2041 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		8B2C419421674456001358A8 /* CustomEventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEventListener.swift; sourceTree = "<group>"; };
+		8B2C419621674CEA001358A8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8B2C419821676A67001358A8 /* Queries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queries.swift; sourceTree = "<group>"; };
+		8B81EFA52166390F0018598E /* JedAISDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JedAISDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B81EFA82166390F0018598E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B81EFAA2166390F0018598E /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		8B81EFAD2166390F0018598E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B81EFAF216639120018598E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B81EFB2216639120018598E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B81EFB4216639120018598E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B81EFBA21663BF00018598E /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		8B81EFBC21663C0F0018598E /* VisitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsViewController.swift; sourceTree = "<group>"; };
+		9FE6BA8EB797BD20785A0D22 /* Pods_JedAISDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JedAISDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1BCBC326A4EBBF8967FD413 /* Pods-JedAISDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JedAISDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JedAISDKDemo/Pods-JedAISDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B81EFA22166390F0018598E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60239DD7C039E6B2DD908D3 /* Pods_JedAISDKDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6544EAB62169F638000D2041 /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				6544EAB22169F56A000D2041 /* Date.swift */,
+				6544EAB72169F6A4000D2041 /* Location.swift */,
+			);
+			path = extentions;
+			sourceTree = "<group>";
+		};
+		6544EAB92169F7D7000D2041 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				6544EABC2169F8D8000D2041 /* JedAIModel.swift */,
+				6544EAC32169FE62000D2041 /* EventType.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		6544EABE2169FBD3000D2041 /* notifications */ = {
+			isa = PBXGroup;
+			children = (
+				6544EABF2169FBE4000D2041 /* NotificationPopables.swift */,
+				6544EAC12169FC7B000D2041 /* UserNotificationListener.swift */,
+			);
+			path = notifications;
+			sourceTree = "<group>";
+		};
+		7BCE073DACC02C706FDDC428 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3080A3D2C7C5F4053D01D7CB /* Pods-JedAISDKDemo.debug.xcconfig */,
+				A1BCBC326A4EBBF8967FD413 /* Pods-JedAISDKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B81EF9C2166390F0018598E = {
+			isa = PBXGroup;
+			children = (
+				8B81EFA72166390F0018598E /* JedAISDKDemo */,
+				8B81EFA62166390F0018598E /* Products */,
+				7BCE073DACC02C706FDDC428 /* Pods */,
+				D2215C464DC5ED7CCD0DA032 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B81EFA62166390F0018598E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B81EFA52166390F0018598E /* JedAISDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B81EFA72166390F0018598E /* JedAISDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6544EABE2169FBD3000D2041 /* notifications */,
+				6544EAB92169F7D7000D2041 /* data */,
+				6544EAB62169F638000D2041 /* extentions */,
+				8B81EFB1216639120018598E /* LaunchScreen.storyboard */,
+				8B81EFAC2166390F0018598E /* Main.storyboard */,
+				8B81EFA82166390F0018598E /* AppDelegate.swift */,
+				8B2C419421674456001358A8 /* CustomEventListener.swift */,
+				8B2C419821676A67001358A8 /* Queries.swift */,
+				8B81EFBE21664D1E0018598E /* ViewControllers */,
+				8B81EFAF216639120018598E /* Assets.xcassets */,
+				8B81EFB4216639120018598E /* Info.plist */,
+				6544EAAA2169F124000D2041 /* JedAIDatabase.swift */,
+				6544EAAE2169F47E000D2041 /* Logger.swift */,
+				6544EAB02169F510000D2041 /* JedAIDecodables.swift */,
+				6544EAB42169F5E9000D2041 /* DiscoverEvent.swift */,
+			);
+			path = JedAISDKDemo;
+			sourceTree = "<group>";
+		};
+		8B81EFBE21664D1E0018598E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B2C419621674CEA001358A8 /* TabBarViewController.swift */,
+				8B81EFAA2166390F0018598E /* EventsViewController.swift */,
+				8B81EFBC21663C0F0018598E /* VisitsViewController.swift */,
+				8B81EFBA21663BF00018598E /* LocationsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D2215C464DC5ED7CCD0DA032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FE6BA8EB797BD20785A0D22 /* Pods_JedAISDKDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B81EFA42166390F0018598E /* JedAISDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B81EFB7216639120018598E /* Build configuration list for PBXNativeTarget "JedAISDKDemo" */;
+			buildPhases = (
+				D273D3E46D607BB260BB229C /* [CP] Check Pods Manifest.lock */,
+				8B81EFA12166390F0018598E /* Sources */,
+				8B81EFA22166390F0018598E /* Frameworks */,
+				8B81EFA32166390F0018598E /* Resources */,
+				6380223560A6F9E7F3129D9E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JedAISDKDemo;
+			productName = JedAISDKDemo;
+			productReference = 8B81EFA52166390F0018598E /* JedAISDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B81EF9D2166390F0018598E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = DeveloperMBP;
+				TargetAttributes = {
+					8B81EFA42166390F0018598E = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8B81EFA02166390F0018598E /* Build configuration list for PBXProject "JedAISDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B81EF9C2166390F0018598E;
+			productRefGroup = 8B81EFA62166390F0018598E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B81EFA42166390F0018598E /* JedAISDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B81EFA32166390F0018598E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B81EFB3216639120018598E /* LaunchScreen.storyboard in Resources */,
+				8B81EFB0216639120018598E /* Assets.xcassets in Resources */,
+				8B81EFAE2166390F0018598E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6380223560A6F9E7F3129D9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JedAISDKDemo/Pods-JedAISDKDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${PODS_ROOT}/jedai.pod/Framework/JedAI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JedAI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JedAISDKDemo/Pods-JedAISDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D273D3E46D607BB260BB229C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JedAISDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B81EFA12166390F0018598E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6544EAAB2169F124000D2041 /* JedAIDatabase.swift in Sources */,
+				6544EAC22169FC7B000D2041 /* UserNotificationListener.swift in Sources */,
+				8B2C419721674CEA001358A8 /* TabBarViewController.swift in Sources */,
+				8B2C419521674456001358A8 /* CustomEventListener.swift in Sources */,
+				6544EAC02169FBE4000D2041 /* NotificationPopables.swift in Sources */,
+				8B2C419921676A67001358A8 /* Queries.swift in Sources */,
+				6544EAAF2169F47E000D2041 /* Logger.swift in Sources */,
+				6544EAB82169F6A4000D2041 /* Location.swift in Sources */,
+				8B81EFAB2166390F0018598E /* EventsViewController.swift in Sources */,
+				6544EAB32169F56A000D2041 /* Date.swift in Sources */,
+				6544EABD2169F8D8000D2041 /* JedAIModel.swift in Sources */,
+				8B81EFA92166390F0018598E /* AppDelegate.swift in Sources */,
+				6544EAC42169FE62000D2041 /* EventType.swift in Sources */,
+				8B81EFBD21663C0F0018598E /* VisitsViewController.swift in Sources */,
+				6544EAB12169F510000D2041 /* JedAIDecodables.swift in Sources */,
+				8B81EFBB21663BF00018598E /* LocationsViewController.swift in Sources */,
+				6544EAB52169F5E9000D2041 /* DiscoverEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B81EFAC2166390F0018598E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B81EFAD2166390F0018598E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B81EFB1216639120018598E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B81EFB2216639120018598E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B81EFB5216639120018598E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		8B81EFB6216639120018598E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B81EFB8216639120018598E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3080A3D2C7C5F4053D01D7CB /* Pods-JedAISDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AYTWGXG4D;
+				INFOPLIST_FILE = JedAISDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anagog.demoJedAISDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B81EFB9216639120018598E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1BCBC326A4EBBF8967FD413 /* Pods-JedAISDKDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AYTWGXG4D;
+				INFOPLIST_FILE = JedAISDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anagog.demoJedAISDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B81EFA02166390F0018598E /* Build configuration list for PBXProject "JedAISDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B81EFB5216639120018598E /* Debug */,
+				8B81EFB6216639120018598E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B81EFB7216639120018598E /* Build configuration list for PBXNativeTarget "JedAISDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B81EFB8216639120018598E /* Debug */,
+				8B81EFB9216639120018598E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B81EF9D2166390F0018598E /* Project object */;
+}

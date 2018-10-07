@@ -1,0 +1,35 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - jedai.pod (4.3.0-canary-1)
+  - SSZipArchive (2.1.4)
+
+DEPENDENCIES:
+  - FMDB
+  - jedai.pod (from `https://github.com/AnagogLtd/JedAI.git`, tag `4.3.0-canary-1`)
+  - SSZipArchive
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FMDB
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  jedai.pod:
+    :git: https://github.com/AnagogLtd/JedAI.git
+    :tag: 4.3.0-canary-1
+
+CHECKOUT OPTIONS:
+  jedai.pod:
+    :git: https://github.com/AnagogLtd/JedAI.git
+    :tag: 4.3.0-canary-1
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  jedai.pod: 9e38a504eb667d01290268c2cdd97cb9537f0996
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
+
+PODFILE CHECKSUM: 10216fadd0aac3e26b023f65e0a7fba3cb9e3611
+
+COCOAPODS: 1.5.3

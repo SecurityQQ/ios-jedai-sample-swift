@@ -42,6 +42,55 @@ public class JedAIModel {
         return result
     }
     
+    // Returns all types of activities in percentage
+    static func poiVisitActivities(since: Date?, until: Date?, typeOfDay: String?) -> [String: Double] {
+        let history: [ActivityEventEntity] = JedAIDatabase.shared.activityEvents(since: since, until: until) ?? []
+        var result: [DiscoverActivity] = []
+        
+        if let typeOfDay = typeOfDay {
+            result = history.map { DiscoverActivity(from: $0) }
+                .filter { $0.typeOfDay == typeOfDay }
+                .filter { $0.type.title != "Stationary"}
+        } else {
+            result = history.map { DiscoverActivity(from: $0)}
+                            .filter { $0.type.title != "Stationary"}
+        }
+        let counts = result.reduce(into: [:]) { counts, activity in counts[activity.type.title, default: 0] += activity.lenghtOfEvent}
+        let sum = result.reduce(into: 0) { counts, activity in counts += activity.lenghtOfEvent}
+        
+        
+        var ratios : [String: Double] = [:]
+        for (k, v) in counts {
+            ratios[k] = 100.0 * Double(v) / Double(sum)
+        }
+        
+        return ratios
+    }
+    
+    static func getActivitiesByType(typeOfDay: String?) -> [String: Double] {
+        let dateSince = Date.distantPast
+        let dateUntil = Date.distantFuture
+        let counterEvents = poiVisitActivities(since: dateSince, until: dateUntil, typeOfDay: typeOfDay)
+        return counterEvents
+    }
+    
+    static func getActivies() -> [String:[String: Double]] {
+        let typesOfDay = ["Morning", "Afternoon", "Evening"]
+        var result : [String: [String: Double]] = [:]
+        for t in typesOfDay {
+            let subres = getActivitiesByType(typeOfDay: t)
+            result[t] = subres
+        }
+        return result
+    }
+    
+    
+    
+//    static func getUserType() -> String {
+//        activities = getAllActivitiesRatio()
+//    }
+
+    
     /// Clears all client's visits from sdk.
     static func clearVisitDatabase() {
         DevTools.clearVisitTable()

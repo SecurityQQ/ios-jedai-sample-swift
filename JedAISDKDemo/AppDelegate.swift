@@ -29,6 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Registering to the event listener with the new builder configuration
         JedAI.sharedInstance().registerEvents(CustomEventListener.shared, eventConfig: builder.build())
         
+        let a = JedAIModel.getActivies()
+
+        print(a)
+        
         return true
     }
 

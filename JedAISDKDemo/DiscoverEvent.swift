@@ -14,22 +14,31 @@ class DiscoverEvent {
     let start: Date
     let end: Date?
     let location: Coordinate?
+    let lenghtOfEvent: Int
     
     init(id: Int, start: Date, end: Date?, location: Coordinate?) {
         self.id = id
         self.start = start
         self.end = end
         self.location = location
+        if let end = end {
+            self.lenghtOfEvent = abs(Int(start.timeIntervalSince(end)))
+        } else {
+//            self.lenghtOfEvent = abs(Int(start.timeIntervalSinceNow))
+            self.lenghtOfEvent = 0
+        }
     }
 }
 
 class DiscoverActivity: DiscoverEvent {
     let type: ActivityType
     let stopLocation: Coordinate?
+    let typeOfDay: String?
     
-    init(id: Int, type: ActivityType, start: Date, end: Date?, startLocation: Coordinate?, stopLocation: Coordinate?) {
+    init(id: Int, type: ActivityType, start: Date, end: Date?, startLocation: Coordinate?, stopLocation: Coordinate?, typeOfDay: String?) {
         self.type = type
         self.stopLocation = stopLocation
+        self.typeOfDay = typeOfDay
         super.init(id: id, start: start, end: end, location: startLocation)
     }
     

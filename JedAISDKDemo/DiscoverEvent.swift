@@ -26,10 +26,12 @@ class DiscoverEvent {
 class DiscoverActivity: DiscoverEvent {
     let type: ActivityType
     let stopLocation: Coordinate?
+    let typeOfDay: String?
     
-    init(id: Int, type: ActivityType, start: Date, end: Date?, startLocation: Coordinate?, stopLocation: Coordinate?) {
+    init(id: Int, type: ActivityType, start: Date, end: Date?, startLocation: Coordinate?, stopLocation: Coordinate?, typeOfDay: String?) {
         self.type = type
         self.stopLocation = stopLocation
+        self.typeOfDay = typeOfDay
         super.init(id: id, start: start, end: end, location: startLocation)
     }
     

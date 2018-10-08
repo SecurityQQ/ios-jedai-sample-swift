@@ -67,7 +67,7 @@ struct ActivityEventEntity: Codable {
     let id: Int
     let startTimestamp: Timestamp
     let stopTimestamp: Timestamp
-    let activityType: String?
+    let activityType: UInt?
     let startLatitude: Double?
     let startLongitude: Double?
     let stopLatitude: Double?
@@ -77,7 +77,7 @@ struct ActivityEventEntity: Codable {
         case id = "id"
         case startTimestamp = "StartTime"
         case stopTimestamp = "EndTime"
-        case activityType = "Type"
+        case activityType = "ActivityType"
         case startLatitude = "StartLatitude"
         case startLongitude = "StartLongitude"
         case stopLatitude = "EndLatitude"
@@ -88,9 +88,25 @@ struct ActivityEventEntity: Codable {
 // MARK: - Initial DiscoverActivity from ActivityEventEntity
 extension DiscoverActivity {
     convenience init(from entity: ActivityEventEntity) {
-        let type = ActivityType(text: entity.activityType)
+        let type = ActivityType(rawValue: entity.activityType ?? 0)
         let startDate = (entity.startTimestamp / 1000).decodeTimestamp()
         let stopDate = entity.stopTimestamp > 0 ? (entity.stopTimestamp / 1000).decodeTimestamp() : nil
+        
+        
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: startDate)
+        
+        var typeOfDay: String = "Evening"
+        if hour < 6 {
+        } else if hour < 13 {
+            typeOfDay = "Morning"
+        } else if hour < 20 {
+            typeOfDay = "Afternoon"
+        } else {
+        }
+        
+        print(typeOfDay)
+        
         var startLocation: Coordinate?
         var stopLocation: Coordinate?
         if let lat = entity.startLatitude, let lon = entity.startLongitude {
@@ -100,11 +116,12 @@ extension DiscoverActivity {
             stopLocation = Coordinate(latitude: lat, longitude: lon)
         }
         self.init(id: entity.id,
-                  type: type,
+                  type: type!,
                   start: startDate,
                   end: stopDate,
                   startLocation: startLocation,
-                  stopLocation: stopLocation)
+                  stopLocation: stopLocation,
+                  typeOfDay: typeOfDay)
     }
 }
 

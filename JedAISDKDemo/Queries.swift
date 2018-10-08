@@ -74,7 +74,7 @@ class JedAIQueries {
         let since = (since?.timeIntervalSince1970 ?? 0) * 1000
         let until = (until?.timeIntervalSince1970 ?? 0) * 1000
          return """
-        SELECT act._id as id, StartTimestamp as StartTime, StopTimestamp as EndTime, locStart.Latitude as StartLatitude, locStart.Longitude as StartLongitude, locStop.Latitude as EndLatitude, locStop.Longitude as EndLongitude, Confidence, VehicleType \
+        SELECT act._id as id, StartTimestamp as StartTime, StopTimestamp as EndTime, locStart.Latitude as StartLatitude, locStart.Longitude as StartLongitude, locStop.Latitude as EndLatitude, locStop.Longitude as EndLongitude, Confidence, VehicleType, ActivityType \
         FROM Activity as act LEFT JOIN Location as locStart ON locStart._id=StartLocationId LEFT JOIN Location as locStop ON locStop._id=StopLocationId \
         WHERE (\(since)<StartTimestamp OR \(since)=0) \
         AND (\(until)>StartTimestamp OR \(until)=0) \

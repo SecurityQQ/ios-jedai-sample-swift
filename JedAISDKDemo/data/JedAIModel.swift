@@ -42,6 +42,51 @@ public class JedAIModel {
         return result
     }
     
+    // Returns all types of activities in percentage
+    static func poiVisitActivities(since: Date?, until: Date?, typeOfDay: String?) -> [String: Double] {
+        let history: [ActivityEventEntity] = JedAIDatabase.shared.activityEvents(since: since, until: until) ?? []
+        var result: [String] = []
+        
+        if let typeOfDay = typeOfDay {
+            result = history.map { DiscoverActivity(from: $0) }
+                .filter { $0.typeOfDay == typeOfDay }
+                .map({$0.type.title})
+        } else {
+            result = history.map { DiscoverActivity(from: $0).type.title}
+        }
+        let counts = result.reduce(into: [:]) { counts, word in counts[word, default: 0] += 1}
+        var ratios : [String: Double] = [:]
+        for (k, v) in counts {
+            ratios[k] = 100.0 * Double(v) / Double(result.count)
+        }
+        
+        return ratios
+    }
+    
+    static func getActivitiesByType(typeOfDay: String?) -> [String: Double] {
+        let dateSince = Date.distantPast
+        let dateUntil = Date.distantFuture
+        let counterEvents = poiVisitActivities(since: dateSince, until: dateUntil, typeOfDay: typeOfDay)
+        return counterEvents
+    }
+    
+    static func getActivies() -> [String:[String: Double]] {
+        let typesOfDay = ["Morning", "Afternoon", "Evening"]
+        var result : [String: [String: Double]] = [:]
+        for t in typesOfDay {
+            let subres = getActivitiesByType(typeOfDay: t)
+            result[t] = subres
+        }
+        return result
+    }
+    
+    
+    
+//    static func getUserType() -> String {
+//        activities = getAllActivitiesRatio()
+//    }
+
+    
     /// Clears all client's visits from sdk.
     static func clearVisitDatabase() {
         DevTools.clearVisitTable()

@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
         // Initializing the JedAI SDK
         JedAI.sharedInstance().setup()
@@ -28,6 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Registering to the event listener with the new builder configuration
         JedAI.sharedInstance().registerEvents(CustomEventListener.shared, eventConfig: builder.build())
+        
+        let a = JedAIModel.getActivies()
+
+        print(a)
         
         return true
     }

@@ -136,8 +136,8 @@ extension EventsViewController: UIDocumentPickerDelegate {
             didSuccess = SSZipArchive.unzipFile(atPath: urls.first?.path ?? "", toDestination: pathToDB)
             print("new database file was unzipped:\(didSuccess)")
             
-            let alert = UIAlertController(title: "Alert", message: "Restart application to enable database changes", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Alert", message: "Restart application to enable database changes", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }

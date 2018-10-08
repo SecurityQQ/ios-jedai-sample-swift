@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64DB9FB1216B7A9800BCC5AB /* TransportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB9FB0216B7A9800BCC5AB /* TransportTableViewController.swift */; };
+		64DB9FB4216B7C8600BCC5AB /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB9FB3216B7C8600BCC5AB /* Transport.swift */; };
+		64DB9FB6216B803100BCC5AB /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB9FB5216B803100BCC5AB /* DayViewController.swift */; };
+		64DB9FB8216B85DC00BCC5AB /* PackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB9FB7216B85DC00BCC5AB /* PackageViewController.swift */; };
+		64DB9FBA216B8E8F00BCC5AB /* TicketsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB9FB9216B8E8F00BCC5AB /* TicketsTableViewController.swift */; };
+		64DB9FBC216B965300BCC5AB /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB9FBB216B965300BCC5AB /* ActivityTableViewController.swift */; };
 		6544EAAB2169F124000D2041 /* JedAIDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAAA2169F124000D2041 /* JedAIDatabase.swift */; };
 		6544EAAF2169F47E000D2041 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAAE2169F47E000D2041 /* Logger.swift */; };
 		6544EAB12169F510000D2041 /* JedAIDecodables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6544EAB02169F510000D2041 /* JedAIDecodables.swift */; };
@@ -32,6 +38,12 @@
 
 /* Begin PBXFileReference section */
 		3080A3D2C7C5F4053D01D7CB /* Pods-JedAISDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JedAISDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JedAISDKDemo/Pods-JedAISDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		64DB9FB0216B7A9800BCC5AB /* TransportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTableViewController.swift; sourceTree = "<group>"; };
+		64DB9FB3216B7C8600BCC5AB /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		64DB9FB5216B803100BCC5AB /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		64DB9FB7216B85DC00BCC5AB /* PackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewController.swift; sourceTree = "<group>"; };
+		64DB9FB9216B8E8F00BCC5AB /* TicketsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsTableViewController.swift; sourceTree = "<group>"; };
+		64DB9FBB216B965300BCC5AB /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
 		6544EAAA2169F124000D2041 /* JedAIDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JedAIDatabase.swift; sourceTree = "<group>"; };
 		6544EAAE2169F47E000D2041 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		6544EAB02169F510000D2041 /* JedAIDecodables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JedAIDecodables.swift; sourceTree = "<group>"; };
@@ -70,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64DB9FB2216B7C6D00BCC5AB /* models */ = {
+			isa = PBXGroup;
+			children = (
+				64DB9FB3216B7C8600BCC5AB /* Transport.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		6544EAB62169F638000D2041 /* extentions */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +155,7 @@
 				8B81EFA82166390F0018598E /* AppDelegate.swift */,
 				8B2C419421674456001358A8 /* CustomEventListener.swift */,
 				8B2C419821676A67001358A8 /* Queries.swift */,
+				64DB9FB2216B7C6D00BCC5AB /* models */,
 				8B81EFBE21664D1E0018598E /* ViewControllers */,
 				8B81EFAF216639120018598E /* Assets.xcassets */,
 				8B81EFB4216639120018598E /* Info.plist */,
@@ -150,9 +171,14 @@
 			isa = PBXGroup;
 			children = (
 				8B2C419621674CEA001358A8 /* TabBarViewController.swift */,
+				64DB9FB7216B85DC00BCC5AB /* PackageViewController.swift */,
+				64DB9FB0216B7A9800BCC5AB /* TransportTableViewController.swift */,
 				8B81EFAA2166390F0018598E /* EventsViewController.swift */,
 				8B81EFBC21663C0F0018598E /* VisitsViewController.swift */,
 				8B81EFBA21663BF00018598E /* LocationsViewController.swift */,
+				64DB9FB5216B803100BCC5AB /* DayViewController.swift */,
+				64DB9FB9216B8E8F00BCC5AB /* TicketsTableViewController.swift */,
+				64DB9FBB216B965300BCC5AB /* ActivityTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -286,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64DB9FBC216B965300BCC5AB /* ActivityTableViewController.swift in Sources */,
 				6544EAAB2169F124000D2041 /* JedAIDatabase.swift in Sources */,
 				6544EAC22169FC7B000D2041 /* UserNotificationListener.swift in Sources */,
 				8B2C419721674CEA001358A8 /* TabBarViewController.swift in Sources */,
@@ -297,10 +324,15 @@
 				8B81EFAB2166390F0018598E /* EventsViewController.swift in Sources */,
 				6544EAB32169F56A000D2041 /* Date.swift in Sources */,
 				6544EABD2169F8D8000D2041 /* JedAIModel.swift in Sources */,
+				64DB9FB6216B803100BCC5AB /* DayViewController.swift in Sources */,
 				8B81EFA92166390F0018598E /* AppDelegate.swift in Sources */,
 				6544EAC42169FE62000D2041 /* EventType.swift in Sources */,
 				8B81EFBD21663C0F0018598E /* VisitsViewController.swift in Sources */,
 				6544EAB12169F510000D2041 /* JedAIDecodables.swift in Sources */,
+				64DB9FBA216B8E8F00BCC5AB /* TicketsTableViewController.swift in Sources */,
+				64DB9FB4216B7C8600BCC5AB /* Transport.swift in Sources */,
+				64DB9FB1216B7A9800BCC5AB /* TransportTableViewController.swift in Sources */,
+				64DB9FB8216B85DC00BCC5AB /* PackageViewController.swift in Sources */,
 				8B81EFBB21663BF00018598E /* LocationsViewController.swift in Sources */,
 				6544EAB52169F5E9000D2041 /* DiscoverEvent.swift in Sources */,
 			);
@@ -453,14 +485,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2AYTWGXG4D;
+				DEVELOPMENT_TEAM = 6N2AK6Z2M4;
 				INFOPLIST_FILE = JedAISDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Anagog.demoJedAISDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfs.hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -475,14 +507,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2AYTWGXG4D;
+				DEVELOPMENT_TEAM = 6N2AK6Z2M4;
 				INFOPLIST_FILE = JedAISDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Anagog.demoJedAISDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfs.hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

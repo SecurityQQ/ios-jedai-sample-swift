@@ -14,12 +14,19 @@ class DiscoverEvent {
     let start: Date
     let end: Date?
     let location: Coordinate?
+    let lenghtOfEvent: Int
     
     init(id: Int, start: Date, end: Date?, location: Coordinate?) {
         self.id = id
         self.start = start
         self.end = end
         self.location = location
+        if let end = end {
+            self.lenghtOfEvent = abs(Int(start.timeIntervalSince(end)))
+        } else {
+//            self.lenghtOfEvent = abs(Int(start.timeIntervalSinceNow))
+            self.lenghtOfEvent = 0
+        }
     }
 }
 

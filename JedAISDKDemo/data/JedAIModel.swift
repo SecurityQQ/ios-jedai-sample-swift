@@ -45,19 +45,23 @@ public class JedAIModel {
     // Returns all types of activities in percentage
     static func poiVisitActivities(since: Date?, until: Date?, typeOfDay: String?) -> [String: Double] {
         let history: [ActivityEventEntity] = JedAIDatabase.shared.activityEvents(since: since, until: until) ?? []
-        var result: [String] = []
+        var result: [DiscoverActivity] = []
         
         if let typeOfDay = typeOfDay {
             result = history.map { DiscoverActivity(from: $0) }
                 .filter { $0.typeOfDay == typeOfDay }
-                .map({$0.type.title})
+                .filter { $0.type.title != "Stationary"}
         } else {
-            result = history.map { DiscoverActivity(from: $0).type.title}
+            result = history.map { DiscoverActivity(from: $0)}
+                            .filter { $0.type.title != "Stationary"}
         }
-        let counts = result.reduce(into: [:]) { counts, word in counts[word, default: 0] += 1}
+        let counts = result.reduce(into: [:]) { counts, activity in counts[activity.type.title, default: 0] += activity.lenghtOfEvent}
+        let sum = result.reduce(into: 0) { counts, activity in counts += activity.lenghtOfEvent}
+        
+        
         var ratios : [String: Double] = [:]
         for (k, v) in counts {
-            ratios[k] = 100.0 * Double(v) / Double(result.count)
+            ratios[k] = 100.0 * Double(v) / Double(sum)
         }
         
         return ratios

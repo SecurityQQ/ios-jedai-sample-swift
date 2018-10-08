@@ -98,9 +98,9 @@ extension DiscoverActivity {
         
         var typeOfDay: String = "Evening"
         if hour < 6 {
-        } else if hour < 13 {
+        } else if hour < 12 {
             typeOfDay = "Morning"
-        } else if hour < 20 {
+        } else if hour < 18 {
             typeOfDay = "Afternoon"
         } else {
         }
